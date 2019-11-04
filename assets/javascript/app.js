@@ -1,13 +1,13 @@
 $( document ).ready(function(){
     var firebaseConfig = {
-        apiKey: "AIzaSyBDO3crLHAkl-Mx3DiUfQXATgarPvrGU5E",
-        authDomain: "train-scheduler-26007.firebaseapp.com",
-        databaseURL: "https://train-scheduler-26007.firebaseio.com",
-        projectId: "train-scheduler-26007",
-        storageBucket: "train-scheduler-26007.appspot.com",
-        messagingSenderId: "663007289169",
-        appId: "1:663007289169:web:d63f3dada625dfb4673d70",
-        measurementId: "G-4VFHYHWD6Z"
+    apiKey: "AIzaSyDQhfxKV9XDyoyfZGEPcjO1mWywHx1mXgE",
+    authDomain: "train-scheduler-2840a.firebaseapp.com",
+    databaseURL: "https://train-scheduler-2840a.firebaseio.com",
+    projectId: "train-scheduler-2840a",
+    storageBucket: "train-scheduler-2840a.appspot.com",
+    messagingSenderId: "1091944176490",
+    appId: "1:1091944176490:web:1b40bc972a383b54dfa313",
+    measurementId: "G-5QJZG0TBQ5"
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
