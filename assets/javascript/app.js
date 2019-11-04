@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
     var firebaseConfig = {
         apiKey: "AIzaSyBDO3crLHAkl-Mx3DiUfQXATgarPvrGU5E",
         authDomain: "train-scheduler-26007.firebaseapp.com",
@@ -6,6 +6,8 @@ $(document).ready(function() {
         projectId: "train-scheduler-26007",
         storageBucket: "train-scheduler-26007.appspot.com",
         messagingSenderId: "663007289169",
+        appId: "1:663007289169:web:d63f3dada625dfb4673d70",
+        measurementId: "G-4VFHYHWD6Z"
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
@@ -39,7 +41,7 @@ $(document).ready(function() {
         var time = childSnapshot.val().trainTime;
         var frequ = childSnapshot.val().frequency;
 
-        var currentTime = moment().format("HH:mm");
+        var currentTime = moment();
         var convertedTime = moment(time, "HH:mm").subtract(1, "years");
         var timeDiff = moment().diff(moment(convertedTime), "minutes");
         var remainder = timeDiff % frequ;
@@ -52,4 +54,4 @@ $(document).ready(function() {
 
 
     });
-});
+ 
