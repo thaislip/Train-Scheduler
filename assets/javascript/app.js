@@ -1,4 +1,4 @@
-
+$( document ).ready(function(){
     var firebaseConfig = {
         apiKey: "AIzaSyBDO3crLHAkl-Mx3DiUfQXATgarPvrGU5E",
         authDomain: "train-scheduler-26007.firebaseapp.com",
@@ -36,6 +36,7 @@
     });
 
     database.ref().on("child_added", function(childSnapshot){
+        console.log(childSnapshot.val());
         var train = childSnapshot.val().trainName;
         var desti = childSnapshot.val().destination;
         var time = childSnapshot.val().trainTime;
@@ -54,4 +55,4 @@
 
 
     });
- 
+}); 
